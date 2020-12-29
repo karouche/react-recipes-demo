@@ -1,5 +1,18 @@
+html { 
+  margin:0;
+  padding:0;
+  
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+
+
 .App {
   text-align: center;
+  /*background-color: beige;*/
+ 
+  min-height: 1050px;
 }
 
 .App-logo {
@@ -13,9 +26,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header {  
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +35,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -36,3 +49,191 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width:  100%;  
+  background-color: beige;
+  height: 950px;
+}
+
+.App-body {    
+  min-height: 1000px;  
+  /* background-image: url(http://tastyrecipes.sapeople.com/files/2019/12/bg.jpg);*/  
+    background-image: url(./images/bcg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.body-container {
+  width:  80%;  
+  /*background-color: beige;*/
+  height: 99%;
+  margin:  auto;
+}
+
+.star-icon-panel {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.star-icon-panel-disabled {
+  cursor: default; 
+  pointer-events: none;
+}
+
+.App-recipe-body {
+  margin: 20px auto;
+  width: 1000px; 
+}
+.form-control {
+  width:  90%;  
+  display: block;
+  margin: 5px;
+}
+
+.form-group {  
+  text-align: left;
+  margin: 5px;
+}
+
+ .btn-panel {
+   margin: auto;
+ }
+
+ .image-upload > input {
+    visibility:hidden;
+    width:0;
+    height:0
+}
+
+.image-upload > img {
+  pointer-events: none
+}
+
+.commentAuthor {
+  font-size: larger;
+    font-weight: bold;
+    margin: 5px;
+}
+ 
+.commentList {
+  background-color: white;
+}
+
+.comment {
+  margin: 5px 0;
+  background-color: #e0e0c4;
+  border-radius: 2%;
+}
+
+.comment table > tr.author-row td {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.comment .star-icon-panel {
+   margin: 0; 
+}
+
+.comment table tr td img {
+  width:  auto;
+  height: 100%;
+}
+
+
+.commentBox  {    
+  background-color: whitesmoke;
+}
+
+.commentBox h1 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;;
+}
+
+textarea.styled {
+	width: 800px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+  margin: 10px 0;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.comment-form {
+  margin-top: 10px;
+}
+
+
+.commentBox .chakra-divider {
+  height: 20px; 
+}
+
+.input-field {
+  width: 40% !important;
+  display: block;
+  background-color: white !important;
+}
+
+.comment-form .star-icon-panel {
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+
+.css-am7l5u img {
+  cursor: pointer;
+}
+
+ 
+
+.App-footer {  
+
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+
+  margin-top: 1rem;
+  padding: 1rem;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: rgb(235, 195, 64);
+ 
+}
+
+.App-footer .footer-social{
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  display: block;
+ }
+
+.App-footer .footer-credits{ 
+  font-size: 13px;
+  max-width: 1138px;
+  margin: 0 auto;
+  padding: 21px;
+  font-family: "Open Sans",sans-serif;
+}
+
+ li span {
+  width: 350px;  
+  display: inline-flex;
+ }
+
+ ul.css-155za0w li {
+   width : 400px;
+ }

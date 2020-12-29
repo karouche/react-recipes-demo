@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import CardList  from './components/pages/CardList'
+import Header from './components/pages/Header';
+import Footer from './components/pages/Footer'
+import { BrowserRouter  as Router, Switch, Route } from 'react-router-dom'
+import Recipe from './components/pages/Recipe';
+import NotFound from './components/pages/NotFound'
+import About from './components/pages/About'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header/>
+       <div className="App-body">
+        <Router>            
+          <Switch>
+            <Route exact path="/">
+                  <CardList  />
+            </Route>
+            <Route exact path="/recipes">
+                  <CardList/>
+            </Route> 
+            <Route   exact path="/recipe/:name"
+                    render = {props => <Recipe   {...props}  />}
+            />  
+             {/*<Route   exact path="/recipes/create" component = {RecipeForm} />*/}
+             <Route     path="/recipe/notfound">
+                    <NotFound/>
+             </Route>
+             <Route  component={NotFound}/>
+            </Switch>
+        </Router>
+        </div>
+       <Footer/>
     </div>
   );
 }
