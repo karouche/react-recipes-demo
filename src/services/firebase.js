@@ -4,13 +4,13 @@ import Rebase from 're-base'
 //dotenv.config()
  
 const config = {
-  apiKey: "AIzaSyDM0lGunMth1L3EHlmFUUg5Th0uzZS6TOM",
-  authDomain: "frb-recipes-exotic.firebaseapp.com",
-  projectId: "frb-recipes-exotic",
-  storageBucket: "frb-recipes-exotic.appspot.com",
-  messagingSenderId: "975673926613",
-  appId: "1:975673926613:web:2717f6b6aa6565ca66935c",
-  databaseURL: "https://frb-recipes-exotic-default-rtdb.europe-west1.firebasedatabase.app/"   
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MS_ID",
+  appId: "YOUR_APP_ID",
+  databaseURL: "YOUR_DB_URL"   
 }
  
  
