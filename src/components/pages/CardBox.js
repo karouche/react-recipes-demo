@@ -5,14 +5,7 @@ import { useHistory  } from 'react-router-dom'
 import slugify from '../../helpers/utils'
 
 
-const requireImage = path => {
-   
-  try {
-      return require (`${path}`);
-  } catch (error) {
-      return require (`../../images/default.jpeg`);
-  }
-} 
+ 
 
 const CardBox = ({recipe}) => {
 
@@ -51,7 +44,7 @@ const CardBox = ({recipe}) => {
                   textTransform="uppercase"
                   ml="2"
             >
-              {property.beds} beds &bull; {property.baths} baths
+              Temps de cuisson : 25 min
             </Box>
           </Box>
   
